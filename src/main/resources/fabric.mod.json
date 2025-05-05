@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "darkmatter",
+	"version": "0.1",
+	"name": "DarkMatter",
+	"description": "wip",
+	"authors": [
+		"BottledToast"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/darkmatter/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"bottled.darkmatter.DarkMatter"
+		],
+		"fabric-datagen": [
+			"bottled.darkmatter.DarkMatterDataGenerator"
+		],
+		"client": [
+			"bottled.darkmatter.DarkMatterClient"
+		]
+	},
+	"mixins": [
+		"darkmatter.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
